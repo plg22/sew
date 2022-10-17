@@ -29,7 +29,7 @@ body {
 
     background-color:#c8f6c4;
 
-    font-size: 1.6vw;
+    font-size: 1.8vw;
 
     font-family: Arial, Helvetica, sans-serif ;
 
@@ -123,7 +123,7 @@ aside img {
 } /* 002 */
 
 section p {
-    margin-bottom: 5vh;
+    margin-bottom: 2vh;
 }
 
 aside form input {
