@@ -36,13 +36,16 @@ body {
 } /*001*/
 
 header {
+    width: 89vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
     font-size: 3em;
     margin-top: 0em;
     border: 0.1em solid #124f12;
 }/*001*/
 
 section {
-    width: 55vw;
+    width: 50vw;
     margin-right: -3vw;
 }
 
@@ -50,13 +53,15 @@ nav {
     width: 11vw;
     font-size: 1.8vw;
     margin-top: 1.3em;
+    margin-left: 3vw;
     background-color:#92d68c;
     padding: 1em;
 }/*001*/
 
 aside {
-    width: 17.5vw;
+    width: 17vw;
     margin-top: 1.5vh;
+    margin-right: 3vw;
     text-align: center;
     background-color:#92d68c;
     padding: 1vh;
@@ -64,8 +69,13 @@ aside {
 
 img {
     display: block;
-    width: 50vw;
+    width: 30vw;
     margin: auto;
+}/*001*/
+
+a {
+    text-align: center;
+    font-size: 2vw;
 }/*001*/
 
 video {
@@ -111,6 +121,10 @@ aside img {
     width: 14vw;
     height: fit-content;
 } /* 002 */
+
+section p {
+    margin-bottom: 5vh;
+}
 
 aside form input {
     width: 14vw;
