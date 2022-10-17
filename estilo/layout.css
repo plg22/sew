@@ -59,7 +59,7 @@ nav {
 }/*001*/
 
 aside {
-    width: 17vw;
+    width: 18vw;
     margin-top: 1.5vh;
     margin-right: 3vw;
     text-align: center;
@@ -112,7 +112,7 @@ nav a {
 aside ul {
     float: left;
     margin-bottom: 5em;
-    font-size: 1.8vw;
+    font-size: 2vw;
     text-align: left;
     margin-left: -2vw;
 } /* 002 */
