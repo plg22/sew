@@ -1,0 +1,131 @@
+/*******************************
+Pedro Limeres Granado - UO282763
+Descripcion del layout del ejercicio 15
+********************************/
+
+header { grid-area: header; }
+nav { grid-area: nav; }
+main { grid-area: main; }
+aside { grid-area: aside; }
+a {grid-area: a;}
+
+
+body {
+    display: grid;
+  
+    grid-template-areas:
+    'header header header header header'
+    'nav main main main aside'
+    'nav main main main aside'
+    'nav main main main aside'
+    'nav main main main aside'
+    'nav main main main aside';
+
+    gap: 1.2em;
+
+    color: #000000;
+
+    text-align: justify;
+
+    background-color:#c8f6c4;
+
+    font-size: 1.3vw;
+
+    font-family: Arial, Helvetica, sans-serif ;
+
+} /*001*/
+
+header {
+    font-size: 3em;
+    margin-top: 0em;
+    border: 0.1em solid #124f12;
+}/*001*/
+
+section {
+    width: 60vw;
+    margin-right: -3vw;
+}
+
+nav {
+    width: 9vw;
+    font-size: 1.5vw;
+    margin-top: 1.3em;
+    background-color:#92d68c;
+    padding: 1em;
+}/*001*/
+
+aside {
+    width: 17.5vw;
+    margin-top: 1.3em;
+    text-align: center;
+    background-color:#92d68c;
+    padding: 1em;
+}/*001*/
+
+img {
+    display: block;
+    width: 50vw;
+    margin: auto;
+}/*001*/
+
+video {
+    width: 50vw;
+    height: fit-content;
+    display: block;
+    margin: auto;
+} /* 001 */
+
+audio {
+    width: 60vw;
+    display: block;
+    margin: auto;
+} /*001*/
+
+aside h2 {
+    font-size: 2vw;
+} /*002*/
+
+aside p {
+    font-size: 1.5vw;
+} /*002*/
+
+nav a {
+    display: block;
+    color: #0a3809;
+    border: 0.05em solid #035e06;
+    font-size: 1.3vw;
+    text-decoration: none;
+    background-color:#92d68c;
+} /*002*/
+
+aside ul {
+    float: left;
+    margin-bottom: 5em;
+    font-size: 1.5vw;
+    text-align: center;
+    margin-left: -2vw;
+} /* 002 */
+
+aside img {
+    width: 14vw;
+    height: fit-content;
+} /* 002 */
+
+aside form input {
+    width: 14vw;
+    height: fit-content;
+    font-size: 1.3vw;
+} /* 003 */
+
+aside form label {
+    width: 14vw;
+    height: fit-content;
+    font-size: 1.2vw;
+} /* 003 */
+
+aside form fieldset {
+    width: 12vw;
+    height: fit-content;
+    font-size: 0.8vw;
+} /* 003 */
+

@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+	
+    <!--Metadatos de los documentos HTML5-->
+    <meta name ="author" content ="Pedro Limeres" />
+    <meta name ="description" content ="caracteristicas tecnicas de el lenguaje node js" />
+    <meta name ="keywords" content ="aspectos, tecnicos, node.js, concurrencia, módulos, v8, eventos" />
+
+    <!--Definición de la ventana gráfica-->
+    <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
+
+    <title>Node.js - Características</title>
+
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+</head>
+
+<body>
+    <!-- Lista con cada uno, para explicarlos abajo -->
+    <header>
+        <h1>Node.js - Características</h1>
+    </header>
+
+    <nav>
+        <a accesskey="I" tabindex="1" href = "index.html">Introduccion</a>
+        
+        <a accesskey="V" tabindex="2" href = "versiones.html">Versiones</a>
+        
+        <a accesskey="C" tabindex="3" href = "aspectosTecnicos.html">Caracteristicas</a>
+        
+        <a accesskey="E" tabindex="4" href = "ejemplos.html">Ejemplos</a>
+    </nav>
+
+    <section>
+    
+        <h2>Caracteristicas principales de Node.js:</h2>
+
+        <h3>Concurrencia</h3>
+            <p>Node.js funciona con un modelo de evaluación de un único hilo de ejecución, 
+            usando entradas y salidas asíncronas las cuales pueden ejecutarse concurrentemente 
+            en un número de hasta cientos de miles sin incurrir en costos asociados al cambio 
+            de contexto. Este diseño de compartir un único hilo de ejecución entre todas las 
+            solicitudes atiende a necesidades de aplicaciones altamente concurrentes, en el que 
+            toda operación que realice entradas y salidas debe tener una función callback.</p>
+        
+        <h3>V8</h3>
+            <p>V8 es el entorno de ejecución para JavaScript creado para Google Chrome. 
+            Es software libre desde 2008, está escrito en C++ y compila el código fuente 
+            JavaScript en código de máquina en lugar de interpretarlo en tiempo real.</p>
+            <p>Node.js contiene libuv para manejar eventos asíncronos. Libuv es una capa de 
+            abstracción de funcionalidades de redes y sistemas de archivo en sistemas Windows 
+            y sistemas basados en POSIX como Linux, Mac OS X y Unix.</p>
+    
+        <h3>Módulos</h3>
+            <p>Node.js incorpora varios "módulos básicos" compilados en el propio binario, 
+            como por ejemplo el módulo de red, que proporciona una capa para programación 
+            de red asíncrona y otros módulos fundamentales, como por ejemplo Path, FileSystem, 
+            Buffer, Timers y el de propósito más general Stream. Es posible utilizar módulos 
+            desarrollados por terceros, ya sea como archivos ".node" precompilados, o como 
+            archivos en Javascript plano. Los módulos Javascript se implementan siguiendo 
+            la especificación CommonJS para módulos.</p>
+
+            <p>Los módulos de terceros pueden extender node.js o añadir un nivel de abstracción, 
+            implementando varias utilidades middleware para utilizar en aplicaciones web, 
+            como por ejemplo los frameworks connect y express. Pese a que los módulos pueden 
+            instalarse como archivos simples, normalmente se instalan utilizando el Node 
+            Package Manager (npm) que nos facilitará la compilación, instalación y actualización 
+            de módulos así como la gestión de las dependencias.</p>
+            <a href = "https://nodejs.org/api/modules.html">
+                <p>
+                    Si quieres investigar mas por tu cuenta sobre los módulos de Node.js, visita esta página
+                </p>
+            </a>
+            <p>Aqui tienes un video que te resume los modulos:</p>
+            <video src="multimedia/modulos.mp4" controls preload="auto" >
+                
+            </video>
+            
+        <h3>Desarrollo homogéneo entre cliente y servidor</h3>
+            <p>Node.js puede ser combinado con una base de datos documental (por ejemplo, MongoDB 
+            o CouchDB) y bases de datos relacionales como MySQL, PostgreSQL, entre otros, lo 
+            que permite desarrollar en un entorno de desarrollo JavaScript unificado.</p>
+            
+        <h3>Bucle de eventos</h3>
+            <p>Node.js se registra con el sistema operativo y cada vez que un cliente establece 
+            una conexión se ejecuta un callback. Dentro del entorno de ejecución de Node.js, 
+            cada conexión recibe una pequeña asignación de espacio de memoria dinámico, sin 
+            tener que crear un hilo de ejecución.​ A diferencia de otros servidores dirigidos 
+            por eventos, el bucle de gestión de eventos de Node.js no es llamado explícitamente 
+            sino que se activa al final de cada ejecución de una función callback.</p>
+
+    </section>
+
+    <aside>
+        <h2>Principales aspectos técnicos de Node.js</h2>
+
+            <ul>
+                <li>Concurrencia</li>
+                <li>V8</li>
+                <li>Módulos</li>
+                <li>Desarrollo homogéneo entre cliente y servidor</li>
+                <li>Bucle de eventos</li>
+            </ul>
+
+        
+    </aside>
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+/*******************************
+Pedro Limeres Granado - UO282763
+Descripcion de los estilos, prueba ejercicios 13 y 14, 
+probando el diseño final de la página
+********************************/
+
+header { grid-area: header; }
+nav { grid-area: nav; }
+main { grid-area: main; }
+aside { grid-area: aside; }
+a {grid-area: a;}
+
+
+body {
+  display: grid;
+  
+  grid-template-areas:
+    'header header header header header'
+    'nav main main main aside'
+    'nav main main main aside'
+    'nav main main main aside'
+    'nav main main main aside'
+    'nav main main main aside';
+
+  gap: 1.2em;
+
+
+ color: #000000;
+
+ text-align: justify;
+
+ background-color:#c8f6c4;
+
+ font-family: Arial, Helvetica, sans-serif ;
+}/*1*/
+
+header {
+    text-align: center;
+    font-size: 3em;
+    margin-top: 0em;
+    border: 0.1em solid #124f12;
+}/*1*/
+
+nav {
+    width: 15em;
+    margin-top: 2em;
+    background-color:#92d68c;
+    padding: 2em;
+}/*1*/
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+    color: rgb(26, 82, 25);
+}/*1*/
+
+h3 {
+    text-align: center;
+    font-size: 1.4em;
+    color: rgb(26, 82, 25);
+}/*1*/
+
+aside {
+    text-align: center;
+    padding: 0.3em;
+    background-color:#92d68c;
+    padding: 2em;
+}/*1*/
+
+caption {
+    font-size: 1.5em;
+    color: rgb(26, 82, 25);
+    margin-bottom: 1em;
+    text-align: center;
+}/*1*/
+
+table {
+    text-align: center;
+    margin: auto;
+}/*1*/
+
+a {
+    text-align: center;
+}/*1*/
+
+img {
+    display: block;
+    margin: auto;
+}/*1*/
+
+nav a {
+    color: #0a3809;
+    border: 0.05em solid #035e06;
+    font-size: 2em;
+    display: block;
+    text-decoration: none;
+    background-color:#92d68c;
+} /*2*/
+
+aside h2 {
+    font-size: 1.7em;
+} /*2*/
+
+aside audio {
+    text-align: center;
+} /*2*/
+
+table td {
+    border: 0.05em solid #000000;
+    padding: 0.8em;
+}/*2*/

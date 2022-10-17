@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+	
+    <!--Metadatos de los documentos HTML5-->
+    <meta name ="author" content ="Pedro Limeres" />
+    <meta name ="description" content ="Pequeño tutorial con ejemplos basicos de node.js" />
+    <meta name ="keywords" content ="ejemplo, hola, mundo, discord, escucha, responde" />
+
+    <!--Definición de la ventana gráfica-->
+    <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
+
+    <title>Node.js - Ejemplos</title>
+
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+</head>
+
+<body>
+    <!-- Datos con el contenido que aparece en el navegador -->
+    <header><h1>Node.js - Ejemplos</h1></header>
+
+    <nav>
+        <a accesskey="I" tabindex="1" href = "index.html">Introduccion</a>
+        
+        <a accesskey="V" tabindex="2" href = "versiones.html">Versiones</a>
+        
+        <a accesskey="C" tabindex="3" href = "aspectosTecnicos.html">Caracteristicas</a>
+        
+        <a accesskey="E" tabindex="4" href = "ejemplos.html">Ejemplos</a>
+    </nav>
+
+    <section>
+
+    <h2>Pequeños ejemplos del lenguaje Node.js</h2>
+    
+    <h3>Versión de un hola mundo de un servidor HTTP escrito en Node.js:</h3>
+        <img src = "multimedia/hola_mundo.png" alt="Programa con el hola mundo" />
+   
+    <h3>Otro ejemplo con un servidor TCP que escucha en el puerto 7000
+         y responde con cualquier cosa que se le envíe:</h3>
+         <img src = "multimedia/escucha.png" alt="Programa con una escucha y una respuesta" />
+    
+    <h3>Otro ejemplo, pero ahora con discord.js. Este es el código
+         básico para hacer funcionar un bot en Discord</h3>
+         <img src = "multimedia/discord.png" alt="Programa con un bot de discord" />
+    </section>
+
+    <!-- HACER EL FORMULARIO -->
+    <aside>
+        <h2>Formulario de seguimiento</h2>
+        <form>
+            <p><label for="name">Nombre: <input type="text" id="name" /></label></p>
+            
+            <p><label for="age">Edad: <input type="number" id="age" /></label></p>
+            
+            <p><label for="tnum">Teléfono de contacto: <input type="tel" id="tnum" /></label></p>
+            
+            <p><label for="email">Correo electrónico: <input type="email" id="email" /></label></p>
+
+            <fieldset>
+                <legend>Selecciona cuales te han servido mas:</legend>
+                <!-- los elementos agrupados-->
+                <p><label for="primero"> <input type="checkbox" id="primero"> El ejemplo de hola mundo </label></p>
+                <p><label for="segundo"> <input type="checkbox" id="segundo"> El escucha-responde </label></p>
+                <p><label for="tercero"> <input type="checkbox" id="tercero"> El bot de discord </label></p>
+            </fieldset>
+
+            <input type="submit" value="Enviar" />
+            
+        </form>
+    </aside>
+</body>
+</html>
