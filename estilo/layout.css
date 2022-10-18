@@ -21,7 +21,7 @@ body {
     'nav main main main aside'
     'nav main main main aside';
 
-    gap: 1.2em;
+    gap: 1.2vh 1.2vw;
 
     color: #000000;
 
@@ -29,7 +29,7 @@ body {
 
     background-color:#c8f6c4;
 
-    font-size: 1.8vw;
+    font-size: 1.6vw;
 
     font-family: Arial, Helvetica, sans-serif ;
 
@@ -39,7 +39,7 @@ header {
     width: 89vw;
     margin-left: 3vw;
     margin-right: 3vw;
-    font-size: 3em;
+    font-size: 3vw;
     margin-top: 0em;
     border: 0.1em solid #124f12;
 }/*001*/
@@ -51,7 +51,7 @@ section {
 
 nav {
     width: 15vw;
-    font-size: 2.1vw;
+    font-size: 2vw;
     margin-top: 1.5vh;
     margin-left: 1.5vw;
     background-color:#92d68c;
@@ -79,7 +79,7 @@ a {
 }/*001*/
 
 video {
-    width: 30vw;
+    width: 15vw;
     height: fit-content;
     display: block;
     margin: auto;
@@ -111,8 +111,8 @@ nav a {
 
 aside ul {
     float: left;
-    margin-bottom: 5em;
-    font-size: 2.2vw;
+    margin-bottom: 5vh;
+    font-size: 1.8vw;
     text-align: left;
     margin-left: -2.2vw;
 } /* 002 */
