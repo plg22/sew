@@ -7,7 +7,6 @@ header { grid-area: header; }
 nav { grid-area: nav; }
 main { grid-area: main; }
 aside { grid-area: aside; }
-a {grid-area: a;}
 
 
 body {
@@ -22,26 +21,14 @@ body {
     'nav main main main aside';
 
     gap: 1.2vh 1.2vw;
-
-    color: #000000;
-
-    text-align: justify;
-
-    background-color:#c8f6c4;
-
-    font-size: 1.6vw;
-
-    font-family: Arial, Helvetica, sans-serif ;
-
+    
 } /*001*/
 
 header {
     width: 89vw;
     margin-left: 3vw;
     margin-right: 3vw;
-    font-size: 3vw;
     margin-top: 0em;
-    border: 0.1em solid #124f12;
 }/*001*/
 
 section {
@@ -49,12 +36,14 @@ section {
     margin-right: -3vw;
 }
 
+h2+h3 {
+    margin-bottom: 1vh;
+}
+
 nav {
     width: 15vw;
-    font-size: 2vw;
     margin-top: 1.5vh;
     margin-left: 1.5vw;
-    background-color:#92d68c;
     padding: 1em;
 }/*001*/
 
@@ -62,8 +51,6 @@ aside {
     width: 18vw;
     margin-top: 1.5vh;
     margin-right: 3vw;
-    text-align: center;
-    background-color:#92d68c;
     padding: 1vh;
 }/*001*/
 
@@ -73,16 +60,15 @@ img {
     margin: auto;
 }/*001*/
 
-a {
-    text-align: center;
-    font-size: 2.5vw;
-}/*001*/
-
 video {
     width: 25vw;
     height: fit-content;
     display: block;
     margin: auto;
+} /* 001 */
+
+caption {
+    margin-bottom: 1em;
 } /* 001 */
 
 audio {
@@ -91,29 +77,14 @@ audio {
     margin: auto;
 } /*001*/
 
-aside h2 {
-    font-size: 2.3vw;
-} /*002*/
-
-aside p {
-    font-size: 1.5vw;
-} /*002*/
-
 nav a {
     display: block;
     margin-bottom: 3vh;
-    color: #0a3809;
-    border: 0.05em solid #035e06;
-    font-size: 2vw;
-    text-decoration: none;
-    background-color:#92d68c;
 } /*002*/
 
 aside ul {
     float: left;
     margin-bottom: 5vh;
-    font-size: 1.8vw;
-    text-align: left;
     margin-left: -2.2vw;
 } /* 002 */
 
@@ -122,26 +93,26 @@ aside img {
     margin-top: 2vh;
 } /* 002 */
 
+table td {
+    padding: 0.8em;
+}/*002*/
+
 section p {
     margin-bottom: 2vh;
-    font-size: 2vw;
-}
+} /* 002 */
 
 aside form input {
     width: 14vw;
     height: fit-content;
-    font-size: 1.5vw;
 } /* 003 */
 
 aside form label {
     width: 14vw;
     height: fit-content;
-    font-size: 1.3vw;
 } /* 003 */
 
 aside form fieldset {
     width: 12vw;
     height: fit-content;
-    font-size: 1.2vw;
 } /* 003 */
 
