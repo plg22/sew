@@ -50,10 +50,10 @@ section {
 }
 
 nav {
-    width: 12vw;
-    font-size: 1.8vw;
-    margin-top: 1.3em;
-    margin-left: 3vw;
+    width: 15vw;
+    font-size: 2.1vw;
+    margin-top: 1.5vh;
+    margin-left: 1.5vw;
     background-color:#92d68c;
     padding: 1em;
 }/*001*/
@@ -104,7 +104,7 @@ nav a {
     margin-bottom: 3vh;
     color: #0a3809;
     border: 0.05em solid #035e06;
-    font-size: 1.7vw;
+    font-size: 2vw;
     text-decoration: none;
     background-color:#92d68c;
 } /*002*/
@@ -118,12 +118,13 @@ aside ul {
 } /* 002 */
 
 aside img {
-    width: 14vw;
-    height: fit-content;
+    width: 17vw;
+    margin-top: 2vh;
 } /* 002 */
 
 section p {
     margin-bottom: 2vh;
+    font-size: 2vw;
 }
 
 aside form input {
