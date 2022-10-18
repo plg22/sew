@@ -3,6 +3,19 @@ Pedro Limeres Granado - UO282763
 Descripcion de los estilos del ejercicio 14
 ********************************/
 
+body {
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif ;
+    background-color:#c8f6c4;
+    font-size: 1.6vw;
+    text-align: justify;
+} /*001*/
+
+header {
+    font-size: 3vw;
+    border: 0.1em solid #124f12;
+} /*001*/
+
 h1 {
     text-align: center;
     font-size: 5vw;
@@ -11,7 +24,6 @@ h1 {
 h2 {
     text-align: center;
     font-size: 2.5vw;
-    margin-bottom: 1vh;
     color: rgb(26, 82, 25);
 }/*001*/
 
@@ -19,13 +31,21 @@ h3 {
     text-align: center;
     font-size: 2vw;
     color: rgb(26, 82, 25);
-    margin-bottom: 1vh;
+}/*001*/
+
+nav {
+    font-size: 2vw;
+    background-color:#92d68c;
+}/*001*/
+
+aside {
+    text-align: center;
+    background-color:#92d68c;
 }/*001*/
 
 caption {
     font-size: 1.5vw;
     color: rgb(8, 8, 8);
-    margin-bottom: 1em;
     text-align: center;
 }/*001*/
 
@@ -36,12 +56,49 @@ table {
 
 a {
     text-align: center;
+    font-size: 2.5vw;
 }/*001*/
+
+aside h2 {
+    font-size: 2.3vw;
+} /*002*/
+
+aside p {
+    font-size: 1.5vw;
+} /*002*/
+
+aside ul {
+    font-size: 1.8vw;
+    text-align: left;
+} /*002*/
+
+section p {
+    font-size: 2vw;
+} /* 002 */
+
+nav a {
+    color: #0a3809;
+    border: 0.05em solid #035e06;
+    font-size: 2vw;
+    text-decoration: none;
+    background-color:#92d68c;
+} /*002*/
 
 table td {
     border: 0.05em solid #000000;
-    padding: 0.8em;
 }/*002*/
+
+aside form input {
+    font-size: 1.5vw;
+} /* 003 */
+
+aside form label {
+    font-size: 1.3vw;
+} /* 003 */
+
+aside form fieldset {
+    font-size: 1.2vw;
+} /* 003 */
 
 
 
