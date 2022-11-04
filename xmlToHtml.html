@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+<!-- Datos que describen el documento -->
+<meta charset="UTF-8" />
+
+<!--Metadatos de los documentos HTML5-->
+<meta name ="author" content ="Pedro Limeres" />
+<meta name ="description" content ="Personas de mi red social" />
+<meta name ="keywords" content ="aspectos, tecnicos, node.js, concurrencia, modulos, v8, eventos" />
+
+<!--Definicion de la ventana grafica-->
+<meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
+
+<title>Ejercicio 2 - tarea 1</title>
+
+<link rel="stylesheet" type="text/css" href="estilo.css" />
+</head>
+
+<body>
+<header><h1>LISTADO DE USUARIOS DE LA RED SOCIAL</h1></header>
+<h2>Pedro Limeres Granado</h2>
+<ul>
+<li>Nacio el: 2002-12-22, en Oviedo, coordenadas: 43.34221466493636, -5.874403042057627, 287</li>
+<li>Vive en: Oviedo, coordenadas: 43.360642410321574, -5.840270973632206, 269</li>
+<li><img src = "multimedia/yo.png" alt="Foto de perfil" /></li>
+<li>Comentario: Estudiante de la asignatura</li>
+</ul>
+<h2>Alonso Aceves Lopez</h2>
+<ul>
+<li>Nacio el: 1971-04-11, en Ponferrada, coordenadas: 42.553772966253355, -6.605389292281912, 754</li>
+<li>Vive en: Gijon, coordenadas: 43.539122729127634, -5.64614029386378, 3</li>
+<li><img src = "multimedia/aceves.png" alt="Foto de perfil" /></li>
+<li>Comentario: Usuario de la red social</li>
+</ul>
+<h2>Jaime Suarez Mendez</h2>
+<ul>
+<li>Nacio el: 1954-02-01, en Aviles, coordenadas: 43.551567409613234, -5.919051044221978, 15</li>
+<li>Vive en: Cudillero, coordenadas: 43.56323825834375, -6.1451655248937795, 1</li>
+<li><img src = "multimedia/jimmy.png" alt="Foto de perfil" /></li>
+<li>Comentario: Usuario de la red social</li>
+</ul>
+<h2>Borja Sanchez Mendez</h2>
+<ul>
+<li>Nacio el: 1999-04-30, en Sevilla, coordenadas: 37.41693100078749, -6.004348473195116, 309</li>
+<li>Vive en: Cadiz, coordenadas: 36.52013558831632, -6.284843577635413, 4</li>
+<li><img src = "multimedia/borja.png" alt="Foto de perfil" /></li>
+<li>Comentario: Usuario de la red social</li>
+<li>Video: <a href = "https://www.youtube.com/watch?v=7096vAOraso" >Video subido a la red social</a></li>
+</ul>
+<h2>David Costas Cordal</h2>
+<ul>
+<li>Nacio el: 1990-07-09, en Vigo, coordenadas: 42.211888293308284, -8.739654172145492, 30</li>
+<li>Vive en: Santiago de Compostela, coordenadas: 42.88540665551154, -8.499428803924893, 135</li>
+<li><img src = "multimedia/costas.png" alt="Foto de perfil" /></li>
+<li>Comentario: Usuario de la red social</li>
+</ul>
+<h2>Tomeu Nadal Alvarez</h2>
+<ul>
+<li>Nacio el: 2002-09-03, en Mondreganes, coordenadas: 42.69694579874865, -5.021405342876618, 680</li>
+<li>Vive en: Riospaso, coordenadas: 43.02059941775845, -5.879207556212247, 659</li>
+<li><img src = "multimedia/tomeu.png" alt="Foto de perfil" /></li>
+<li>Comentario: Usuario de la red social</li>
+</ul>
+<h2>Rafael Nadal Parera</h2>
+<ul>
+<li>Nacio el: 1985-01-04, en Manacor, coordenadas: 39.56293377080142, 3.2212304095988755, 70</li>
+<li>Vive en: Palma de Mallorca, coordenadas: 39.59002921179593, 2.630042928495023, 28</li>
+<li><img src = "multimedia/rafa.png" alt="Foto de perfil" /></li>
+<li>Comentario: Usuario de la red social</li>
+<li>Video: <a href = "https://www.youtube.com/watch?v=P79QtjJvq70" >Video subido a la red social</a></li>
+</ul>
+<h2>Carlos Alcaraz Garfia</h2>
+<ul>
+<li>Nacio el: 2001-11-29, en Murcia, coordenadas: 38.04222746074683, -1.1447078109541104, 127</li>
+<li>Vive en: Elche, coordenadas: 38.26721815793589, -0.6628486923679388, 174</li>
+<li><img src = "multimedia/alcaraz.png" alt="Foto de perfil" /></li>
+<li>Comentario: Usuario de la red social</li>
+</ul>
+<h2>Carlos Sainz Vazquez</h2>
+<ul>
+<li>Nacio el: 1993-01-31, en Leganes, coordenadas: 40.34058371687682, -3.7605943938281916, 679</li>
+<li>Vive en: Santander, coordenadas: 43.47645854608178, -3.7933145045439853, 15</li>
+<li><img src = "multimedia/sainz.png" alt="Foto de perfil" /></li>
+<li>Comentario: Usuario de la red social</li>
+</ul>
+<h2>Juan Mata Garcia</h2>
+<ul>
+<li>Nacio el: 1995-06-23, en Pola de Somiedo, coordenadas: 43.09281285680875, -6.256408978978509, 1004</li>
+<li>Vive en: Valle de Lago, coordenadas: 43.071909681592594, -6.198425220212997, 1138</li>
+<li><img src = "multimedia/mata.png" alt="Foto de perfil" /></li>
+<li>Comentario: Usuario de la red social</li>
+</ul>
+<h2>Luis Miguel Sanchez Gomez</h2>
+<ul>
+<li>Nacio el: 1989-05-12, en Burgos, coordenadas: 42.34442727497927, -3.6805905451527035, 702</li>
+<li>Vive en: Lugo, coordenadas: 43.003387733699704, -7.5709733898403995, 375</li>
+<li><img src = "multimedia/luismi.png" alt="Foto de perfil" /></li>
+<li>Comentario: Usuario de la red social</li>
+<li>Video: <a href = "https://www.youtube.com/watch?v=IMNmGiTEk6g" >Video subido a la red social</a></li>
+</ul>
+<h2>Marcelo Flores Calvo</h2>
+<ul>
+<li>Nacio el: 2005-08-10, en Valladolid, coordenadas: 41.64477356303907, -4.761221902849695, 1085</li>
+<li>Vive en: Valencia, coordenadas: 39.474809049047174, -0.3585452875871481, 48</li>
+<li><img src = "multimedia/chelo.png" alt="Foto de perfil" /></li>
+<li>Comentario: Usuario de la red social</li>
+</ul>
+<h2>Sergio Tejera Diaz</h2>
+<ul>
+<li>Nacio el: 1983-07-16, en Malaga, coordenadas: 36.733907073198516, -4.426678740196723, 68</li>
+<li>Vive en: Miranda de Ebro, coordenadas: 42.68079219612513, -2.936100373975284, 489</li>
+<li><img src = "multimedia/tejera.png" alt="Foto de perfil" /></li>
+<li>Comentario: Usuario de la red social, jugador de futbol y padre de Lucas</li>
+</ul>
+</body>
+</html>
