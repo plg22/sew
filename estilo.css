@@ -9,7 +9,10 @@ body {
     background-color:#0eefef;
     font-size: 1.6vw;
     text-align: justify;
-} /* 001*/
+
+    display: flex;
+    flex-direction: column;
+} /*001*/
 
 header {
     background-color: aquamarine;
@@ -21,20 +24,29 @@ header {
 h1 {
     text-align: center;
     font-size: 5vw;
-}/* 001*/
+}/*001*/
 
 h2 {
     text-align: center;
-    font-size: 3.5vw;
+    font-size: 3vw;
     color: rgb(0, 0, 0);
+    margin-bottom: 2vh;
+    text-decoration: underline;
 }/*001*/
 
 a {
     font-size: 1.5vw;
-}/*001*/ 
+}/*001*/
 
 img {
-    height: 10vh;
+    width: 8vw;
+    height: auto;
+}/*001*/
+
+li {
+    margin-top: 1vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
 }/*001*/
 
 
