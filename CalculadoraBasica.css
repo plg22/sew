@@ -1,0 +1,36 @@
+/*******************************
+Pedro Limeres Granado - UO282763
+Descripcion de los estilos
+********************************/
+
+body {
+    display: grid;
+  
+    grid-template-columns: [zero] 5vh [one] 5vh [two] 5vh [three] 5vh [four] 5vh [five];
+    grid-template-rows: [zero] 5vh [one] 5vh [two] 5vh [three] 5vh [four] 5vh [five] 5vh [six];
+
+    gap: 1vh 1vh;
+
+    margin-top: 2vh;
+    margin-left: 2vw;
+    
+} /*001*/
+
+input[type="number"] {
+    grid-column-start: zero;
+    grid-column-end: five;
+    grid-row-start: zero;
+    grid-row-end: one;
+}
+
+input[value="+"] {
+    grid-column-start: three;
+    grid-column-end: four;
+    grid-row-start: four;
+    grid-row-end: six;
+}
+
+
+
+
+
