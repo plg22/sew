@@ -35,6 +35,13 @@ input[type="button"] {
     font-size: 2vh;
 }
 
+label{
+    grid-column-start: zero;
+    grid-column-end: zero;
+    grid-row-start: zero;
+    grid-row-end: zero;
+}
+
 
 
 
