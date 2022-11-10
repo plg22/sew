@@ -22,6 +22,10 @@ input[type="number"] {
     grid-row-end: two;
 
     text-align: right;
+
+    background-color: rgba(208, 252, 252, 0.505);
+
+    border: 0.1em solid #000000;
 }
 
 input[value="+"] {
@@ -33,6 +37,7 @@ input[value="+"] {
 
 input[type="button"] {
     font-size: 2vh;
+    background-color: rgba(0, 255, 255, 0.505);
 }
 
 label{
@@ -42,7 +47,7 @@ label{
     grid-row-end: one;
 
     text-align: center;
-} 
+}
 
 
 
