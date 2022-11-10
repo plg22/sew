@@ -7,19 +7,19 @@ body {
     display: grid;
   
     grid-template-columns: [zero] 8vh [one] 8vh [two] 8vh [three] 8vh [four] 8vh [five];
-    grid-template-rows: [zero] 8vh [one] 8vh [two] 8vh [three] 8vh [four] 8vh [five] 8vh [six];
+    grid-template-rows: [zero] 4vh [one] 8vh [two] 8vh [three] 8vh [four] 8vh [five] 8vh [six] 8vh [seven];
 
     gap: 1vh 1vh;
 
-    margin-top: 2vh;
-    margin-left: 2vw;
+    margin-top: 3vh;
+    margin-left: 3vw;
 } /*001*/
 
 input[type="number"] {
     grid-column-start: zero;
     grid-column-end: five;
-    grid-row-start: zero;
-    grid-row-end: one;
+    grid-row-start: one;
+    grid-row-end: two;
 
     text-align: right;
 }
@@ -27,8 +27,8 @@ input[type="number"] {
 input[value="+"] {
     grid-column-start: three;
     grid-column-end: four;
-    grid-row-start: four;
-    grid-row-end: six;
+    grid-row-start: five;
+    grid-row-end: seven;
 }
 
 input[type="button"] {
@@ -37,9 +37,11 @@ input[type="button"] {
 
 label{
     grid-column-start: zero;
-    grid-column-end: zero;
+    grid-column-end: five;
     grid-row-start: zero;
-    grid-row-end: zero;
+    grid-row-end: one;
+
+    text-align: center;
 }
 
 
