@@ -28,7 +28,7 @@ input[type="text"] {
 
     text-align: right;
 
-    background-color: rgba(208, 252, 252, 0.505);
+    background-color: rgba(255, 255, 255);
 
     border: 0.1em solid #000000;
 }
@@ -52,6 +52,8 @@ label{
     grid-row-end: one;
 
     text-align: center;
+    background-color: aliceblue;
+    border: 0.1em solid #000000;
 }
 
 
