@@ -22,35 +22,37 @@
 
 <body>
 
-    <label for="pantalla"> Calculadora Basica </label><input type="number" value="0" id="pantalla" disabled>
-    
-    <input type="button" value="ON/C">
-    <input type="button" value="CE">
-    <input type="button" value="+/-">
-    <input type="button" value="√">
-    <input type="button" value="%">
+    <main>
+        <label for="pantalla"> Calculadora Basica </label><input type="text" value="0" id="pantalla" disabled>
+        
+        <input type="button" value="ON/C" onClick="calculadora.aCero()">
+        <input type="button" value="CE" onClick="calculadora.borrar()">
+        <input type="button" value="+/-" onClick="calculadora.masMenos()">
+        <input type="button" value="√" onClick="calculadora.raiz()">
+        <input type="button" value="%" onClick="calculadora.porcentaje()">
 
-    <input type="button" value="7">
-    <input type="button" value="8">
-    <input type="button" value="9">
-    <input type="button" value="x">
-    <input type="button" value="/">
+        <input type="button" value="7" onClick="calculadora.digito('7')">
+        <input type="button" value="8" onClick="calculadora.digito('8')">
+        <input type="button" value="9" onClick="calculadora.digito('9')">
+        <input type="button" value="x" onClick="calculadora.multiplicacion()">
+        <input type="button" value="/" onClick="calculadora.division()">
 
-    <input type="button" value="4">
-    <input type="button" value="5">
-    <input type="button" value="6">
-    <input type="button" value="-">
-    <input type="button" value="Mrc">
+        <input type="button" value="4" onClick="calculadora.digito('4')">
+        <input type="button" value="5" onClick="calculadora.digito('5')">
+        <input type="button" value="6" onClick="calculadora.digito('6')">
+        <input type="button" value="-" onClick="calculadora.resta()">
+        <input type="button" value="Mrc" onClick="calculadora.mrc()">
 
-    <input type="button" value="1">
-    <input type="button" value="2">
-    <input type="button" value="3">
-    <input type="button" value="+">
-    <input type="button" value="M-">
+        <input type="button" value="1" onClick="calculadora.digito('1')">
+        <input type="button" value="2" onClick="calculadora.digito('2')">
+        <input type="button" value="3" onClick="calculadora.digito('3')">
+        <input type="button" value="+" onClick="calculadora.suma()">
+        <input type="button" value="M-" onClick="calculadora.mMenos()">
 
-    <input type="button" value="0">
-    <input type="button" value=".">
-    <input type="button" value="=">
-    <input type="button" value="M+">
+        <input type="button" value="0" onClick="calculadora.digito('0')">
+        <input type="button" value="." onClick="calculadora.punto()">
+        <input type="button" value="=" onClick="calculadora.igual()">
+        <input type="button" value="M+" onClick="calculadora.mMas()">
+    </main>
 </body>
 </html>

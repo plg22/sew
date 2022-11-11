@@ -3,7 +3,7 @@ Pedro Limeres Granado - UO282763
 Descripcion de los estilos
 ********************************/
 
-body {
+main {
     display: grid;
   
     grid-template-columns: [zero] 8vh [one] 8vh [two] 8vh [three] 8vh [four] 8vh [five];
@@ -13,9 +13,14 @@ body {
 
     margin-top: 3vh;
     margin-left: 3vw;
+
+    width: 45vh;
+
+    background-color: rgb(243, 111, 111);
+    padding: 1em;
 } /*001*/
 
-input[type="number"] {
+input[type="text"] {
     grid-column-start: zero;
     grid-column-end: five;
     grid-row-start: one;
