@@ -1,0 +1,77 @@
+/*******************************
+Pedro Limeres Granado - UO282763
+Descripcion de los estilos
+********************************/
+
+main {
+    display: grid;
+  
+    grid-template-columns: [zero] 12vh [one] 12vh [two] 12vh [three] 12vh [four];
+    grid-template-rows: [zero] 3vh [one] 16vh [two] 4vh [three] 8vh [four] 8vh [five] 8vh [six] 8vh [seven] 8vh [eight] 8vh [nine] 8vh [ten];
+
+    gap: 1vh 1vh;
+
+    margin-top: 3vh;
+    margin-left: 3vw;
+
+    width: 52vh;
+
+    background-color: rgb(186, 186, 186);
+    padding: 1em;
+} /*001*/
+
+label[for="pantalla"] {
+    grid-column-start: zero;
+    grid-column-end: four;
+    grid-row-start: zero;
+    grid-row-end: one;
+
+    background-color: rgba(255, 255, 255, 0.750);
+
+    text-align: center;
+}
+
+textarea[name="pantalla"] {
+    grid-column-start: zero;
+    grid-column-end: four;
+    grid-row-start: one;
+    grid-row-end: two;
+
+    
+    text-align: right;
+
+    font-size: 2.25vh;
+    background-color: rgba(255, 255, 255, 0.750);
+
+    resize: none;
+}
+
+label[for="auxiliar"] {
+    grid-column-start: zero;
+    grid-column-end: one;
+    grid-row-start: two;
+    grid-row-end: three;
+
+    text-align: left;
+
+    background-color: rgba(255, 255, 255, 0.750);
+}
+
+input[type="text"] {
+    grid-column-start: one;
+    grid-column-end: four;
+    grid-row-start: two;
+    grid-row-end: three;
+
+    text-align: right;
+
+    background-color: rgba(255, 255, 255, 0.750);
+}
+
+input[value="Enter"] {
+    grid-column-start: two;
+    grid-column-end: four;
+    grid-row-start: nine;
+    grid-row-end: ten;
+}
+

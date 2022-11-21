@@ -1,0 +1,358 @@
+/*******************************
+Pedro Limeres Granado - UO282763
+Descripcion de los estilos
+********************************/
+
+main {
+    display: grid;
+  
+    grid-template-columns: [zero] 6vh [one] 6vh [two] 6vh [three] 6vh [four] 6vh [five];
+    grid-template-rows: [zero] 3vh [one] 12vh [two] 6vh [three] 6vh [four] 6vh [five] 6vh [six] 6vh [seven] 6vh [eight] 6vh [nine] 6vh [ten] 6vh [eleven];
+
+    gap: 1vh 1vh;
+
+    margin-top: 3vh;
+    margin-left: 3vw;
+
+    width: 35vh;
+
+    background-color: rgb(186, 186, 186);
+    padding: 1em;
+} /*001*/
+
+input[type="text"] {
+    grid-column-start: zero;
+    grid-column-end: five;
+    grid-row-start: one;
+    grid-row-end: two;
+
+    text-align: right;
+
+    background-color: rgba(255, 255, 255, 0.750);
+}
+
+input[type="button"] {
+    font-size: 2vh;
+    background-color: rgba(255, 255, 255, 0.500);
+    text-align: center;
+}
+
+label{
+    grid-column-start: zero;
+    grid-column-end: five;
+    grid-row-start: zero;
+    grid-row-end: one;
+
+    text-align: center;
+    background-color: aliceblue;
+    border: 0.1em solid #000000;
+}
+
+input[value="DEG"] {
+    background-color: rgba(255, 255, 255, 0.750);
+}
+input[value="RAD"] {
+    background-color: rgba(255, 255, 255, 0.750);
+}
+input[value="HYP"] {
+    background-color: rgba(255, 255, 255, 0.750);
+}
+input[value="F-E"] {
+    background-color: rgba(255, 255, 255, 0.750);
+}
+input[value="MC"] {
+    grid-column-start: zero;
+    grid-column-end: one;
+    grid-row-start: three;
+    grid-row-end: four;
+
+    background-color: rgba(255, 255, 255, 0.750);
+}
+input[value="MR"] {
+    grid-column-start: one;
+    grid-column-end: two;
+    grid-row-start: three;
+    grid-row-end: four;
+
+    background-color: rgba(255, 255, 255, 0.750);
+}
+input[value="M+"] {
+    grid-column-start: two;
+    grid-column-end: three;
+    grid-row-start: three;
+    grid-row-end: four;
+
+    background-color: rgba(255, 255, 255, 0.750);
+}
+input[value="M-"] {
+    grid-column-start: three;
+    grid-column-end: four;
+    grid-row-start: three;
+    grid-row-end: four;
+
+    background-color: rgba(255, 255, 255, 0.750);
+}
+input[value="MS"] {
+    grid-column-start: four;
+    grid-column-end: five;
+    grid-row-start: three;
+    grid-row-end: four;
+
+    background-color: rgba(255, 255, 255, 0.750);
+}
+input[value="x^2"] {
+    grid-column-start: zero;
+    grid-column-end: one;
+    grid-row-start: four;
+    grid-row-end: five;
+}
+input[value="x^y"] {
+    grid-column-start: one;
+    grid-column-end: two;
+    grid-row-start: four;
+    grid-row-end: five;
+}
+input[value="sin"] {
+    grid-column-start: two;
+    grid-column-end: three;
+    grid-row-start: four;
+    grid-row-end: five;
+}
+input[value="cos"] {
+    grid-column-start: three;
+    grid-column-end: four;
+    grid-row-start: four;
+    grid-row-end: five;
+}
+input[value="tan"] {
+    grid-column-start: four;
+    grid-column-end: five;
+    grid-row-start: four;
+    grid-row-end: five;
+}
+input[value="asin"] {
+    grid-column-start: two;
+    grid-column-end: three;
+    grid-row-start: four;
+    grid-row-end: five;
+}
+input[value="acos"] {
+    grid-column-start: three;
+    grid-column-end: four;
+    grid-row-start: four;
+    grid-row-end: five;
+}
+input[value="atan"] {
+    grid-column-start: four;
+    grid-column-end: five;
+    grid-row-start: four;
+    grid-row-end: five;
+}
+input[value="√"] {
+    grid-column-start: zero;
+    grid-column-end: one;
+    grid-row-start: five;
+    grid-row-end: six;
+}
+input[value="10^x"] {
+    grid-column-start: one;
+    grid-column-end: two;
+    grid-row-start: five;
+    grid-row-end: six;
+}
+input[value="log"] {
+    grid-column-start: two;
+    grid-column-end: three;
+    grid-row-start: five;
+    grid-row-end: six;
+}
+input[value="Exp"] {
+    grid-column-start: three;
+    grid-column-end: four;
+    grid-row-start: five;
+    grid-row-end: six;
+}
+input[value="Mod"] {
+    grid-column-start: four;
+    grid-column-end: five;
+    grid-row-start: five;
+    grid-row-end: six;
+}
+input[value="↥"] {
+    grid-column-start: zero;
+    grid-column-end: one;
+    grid-row-start: six;
+    grid-row-end: seven;
+}
+input[value="↥↥"] {
+    grid-column-start: zero;
+    grid-column-end: one;
+    grid-row-start: six;
+    grid-row-end: seven;
+}
+input[value="CE"] {
+    grid-column-start: one;
+    grid-column-end: two;
+    grid-row-start: six;
+    grid-row-end: seven;
+}
+input[value="C"] {
+    grid-column-start: two;
+    grid-column-end: three;
+    grid-row-start: six;
+    grid-row-end: seven;
+}
+input[value="⌫"] {
+    grid-column-start: three;
+    grid-column-end: four;
+    grid-row-start: six;
+    grid-row-end: seven;
+}
+input[value="÷"] {
+    grid-column-start: four;
+    grid-column-end: five;
+    grid-row-start: six;
+    grid-row-end: seven;
+}
+input[value="π"] {
+    grid-column-start: zero;
+    grid-column-end: one;
+    grid-row-start: seven;
+    grid-row-end: eight;
+}
+input[value="7"] {
+    grid-column-start: one;
+    grid-column-end: two;
+    grid-row-start: seven;
+    grid-row-end: eight;
+
+    background-color: rgb(255, 255, 255);
+}
+input[value="8"] {
+    grid-column-start: two;
+    grid-column-end: three;
+    grid-row-start: seven;
+    grid-row-end: eight;
+
+    background-color: rgb(255, 255, 255);
+}
+input[value="9"] {
+    grid-column-start: three;
+    grid-column-end: four;
+    grid-row-start: seven;
+    grid-row-end: eight;
+
+    background-color: rgb(255, 255, 255);
+}
+input[value="x"] {
+    grid-column-start: four;
+    grid-column-end: five;
+    grid-row-start: seven;
+    grid-row-end: eight;
+}
+input[value="n!"] {
+    grid-column-start: zero;
+    grid-column-end: one;
+    grid-row-start: eight;
+    grid-row-end: nine;
+}
+input[value="4"] {
+    grid-column-start: one;
+    grid-column-end: two;
+    grid-row-start: eight;
+    grid-row-end: nine;
+
+    background-color: rgb(255, 255, 255);
+}
+input[value="5"] {
+    grid-column-start: two;
+    grid-column-end: three;
+    grid-row-start: eight;
+    grid-row-end: nine;
+
+    background-color: rgb(255, 255, 255);
+}
+input[value="6"] {
+    grid-column-start: three;
+    grid-column-end: four;
+    grid-row-start: eight;
+    grid-row-end: nine;
+
+    background-color: rgb(255, 255, 255);
+}
+input[value="-"] {
+    grid-column-start: four;
+    grid-column-end: five;
+    grid-row-start: eight;
+    grid-row-end: nine;
+}
+input[value="±"] {
+    grid-column-start: zero;
+    grid-column-end: one;
+    grid-row-start: nine;
+    grid-row-end: ten;
+}
+input[value="1"] {
+    grid-column-start: one;
+    grid-column-end: two;
+    grid-row-start: nine;
+    grid-row-end: ten;
+
+    background-color: rgb(255, 255, 255);
+}
+input[value="2"] {
+    grid-column-start: two;
+    grid-column-end: three;
+    grid-row-start: nine;
+    grid-row-end: ten;
+
+    background-color: rgb(255, 255, 255);
+}
+input[value="3"] {
+    grid-column-start: three;
+    grid-column-end: four;
+    grid-row-start: nine;
+    grid-row-end: ten;
+
+    background-color: rgb(255, 255, 255);
+}
+input[value="+"] {
+    grid-column-start: four;
+    grid-column-end: five;
+    grid-row-start: nine;
+    grid-row-end: ten;
+}
+input[value="("] {
+    grid-column-start: zero;
+    grid-column-end: one;
+    grid-row-start: ten;
+    grid-row-end: eleven;
+}
+input[value=")"] {
+    grid-column-start: one;
+    grid-column-end: two;
+    grid-row-start: ten;
+    grid-row-end: eleven;
+}
+input[value="0"] {
+    grid-column-start: two;
+    grid-column-end: three;
+    grid-row-start: ten;
+    grid-row-end: eleven;
+
+    background-color: rgb(255, 255, 255);
+}
+input[value="."] {
+    grid-column-start: three;
+    grid-column-end: four;
+    grid-row-start: ten;
+    grid-row-end: eleven;
+
+    background-color: rgb(255, 255, 255);
+}
+input[value="="] {
+    grid-column-start: four;
+    grid-column-end: five;
+    grid-row-start: ten;
+    grid-row-end: eleven;
+}

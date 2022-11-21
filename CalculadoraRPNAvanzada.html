@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+	
+    <!--Metadatos de los documentos HTML5-->
+    <meta name ="author" content ="Pedro Limeres" />
+    <meta name ="description" content ="CalculadoraRPN" />
+    <meta name ="keywords" content ="calculadora" />
+
+    <!--Definición de la ventana gráfica-->
+    <meta name ="viewport" content ="width=device-width, initial scale=1.0" />
+
+    <title>CalculadoraRPN</title>
+
+    <script src="CalculadoraRPN.js"></script>
+    <script src="CalculadoraRPNAvanzada.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="CalculadoraRPNAvanzada.css" />
+</head>
+
+<body>
+
+    <main>
+        <label for="pantalla"> Calculadora RPN Avanzada </label>
+        <textarea id="pantalla" name="pantalla" ></textarea>
+
+        <label for="auxiliar"> Actual: </label>
+        <input type="text" id="auxiliar" value="" disabled>
+
+        <input type="button" value="√" onclick="calculadoraRPN.raiz()">
+        <input type="button" value="suma" onclick="calculadoraRPN.serieSuma()">
+        <input type="button" value="mult" onclick="calculadoraRPN.serieMult()">
+        <input type="button" value="∫ def" onclick="calculadoraRPN.integral()">
+
+        <input type="button" value="↥" onclick="calculadoraRPN.cambio()">
+        <input type="button" value="sin" onclick="calculadoraRPN.sin()">
+        <input type="button" value="cos" onclick="calculadoraRPN.cos()">
+        <input type="button" value="tan" onclick="calculadoraRPN.tan()">
+        
+        <input type="button" value="ON/C" onclick="calculadoraRPN.aCero()">
+        <input type="button" value="CE" onclick="calculadoraRPN.ce()">
+        <input type="button" value="±" onclick="calculadoraRPN.masMenos()">
+        <input type="button" value="/" onclick="calculadoraRPN.division()">
+        
+        <input type="button" value="7" onclick="calculadoraRPN.digito('7')">
+        <input type="button" value="8" onclick="calculadoraRPN.digito('8')">
+        <input type="button" value="9" onclick="calculadoraRPN.digito('9')">
+        <input type="button" value="x" onclick="calculadoraRPN.multiplicacion()">
+
+        <input type="button" value="4" onclick="calculadoraRPN.digito('4')">
+        <input type="button" value="5" onclick="calculadoraRPN.digito('5')">
+        <input type="button" value="6" onclick="calculadoraRPN.digito('6')">
+        <input type="button" value="-" onclick="calculadoraRPN.resta()">
+
+        <input type="button" value="1" onclick="calculadoraRPN.digito('1')">
+        <input type="button" value="2" onclick="calculadoraRPN.digito('2')">
+        <input type="button" value="3" onclick="calculadoraRPN.digito('3')">
+        <input type="button" value="+" onclick="calculadoraRPN.suma()">
+
+        <input type="button" value="0" onclick="calculadoraRPN.digito('0')">
+        <input type="button" value="." onclick="calculadoraRPN.punto()">
+        <input type="button" value="Enter" onclick="calculadoraRPN.enter()">
+
+        <script>calculadoraCientifica.aCero()</script>
+    </main>
+</body>
+</html>
