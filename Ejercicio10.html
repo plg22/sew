@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+	
+    <!--Metadatos de los documentos HTML5-->
+    <meta name ="author" content ="Pedro Limeres" />
+    <meta name ="description" content ="aquí cada documento debe tener la descripción del contenido concreto del mismo" />
+    <meta name ="keywords" content ="aquí cada documento debe tener la lista de las palabras clave del mismo separadas por comas" />
+
+    <!--Definición de la ventana gráfica-->
+    <meta name ="viewport" content ="width=device-width, initial scale=1.0" />
+
+    <title>Ejercicio 10</title>
+
+    <link rel="stylesheet" type="text/css" href="Ejercicio10.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="Ejercicio10.js"></script>
+</head>
+
+<body>
+    <h1>Ejercicio 10: Precio del oro con metals-api</h1>  
+    <article>
+        <button name = "Precio del oro" onclick = "metal.cargarDatos('latest')">Precio del oro actual</button>
+    </article> 
+    <article>
+        <label for="fecha"> Introduzca una fecha posterior a 2012-10-01 (YYYY-MM-DD) </label><input type="text" value="" id="fecha" >
+        <button name = "Precio del oro" onclick = "metal.cargarDatos('specific')">Precio del oro en una fecha</button>
+    </article> 
+    
+    <footer>
+        <section>Precio del oro</section>
+    </footer>
+</body>
+</html>

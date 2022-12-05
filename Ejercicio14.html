@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+	
+    <!--Metadatos de los documentos HTML5-->
+    <meta name ="author" content ="Pedro Limeres" />
+    <meta name ="description" content ="aquí cada documento debe tener la descripción del contenido concreto del mismo" />
+    <meta name ="keywords" content ="aquí cada documento debe tener la lista de las palabras clave del mismo separadas por comas" />
+
+    <!--Definición de la ventana gráfica-->
+    <meta name ="viewport" content ="width=device-width, initial scale=1.0" />
+
+    <title>Ejercicio 13(KML)</title>
+
+    <link rel="stylesheet" type="text/css" href="Ejercicio14.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="Ejercicio14.js"></script>
+</head>
+
+<body>
+    <!--Esta es una pequeña aplicación con la que se puede interactuar con un video,
+    usar la pantalla completa mediante un botón,
+    y además se les ha añadido efectos de audio a todos los botones -->
+    <h1>Aplicación con tres APIS de HTML5</h1>
+       
+    <section>
+        <input type="button" value="Reanudar/Comenzar video" onclick="aplicacion.reanudar()">
+        <input type="button" value="Pausar video" onclick="aplicacion.pausa()">
+        <input type="button" value="Adelantar 5 segundos" onclick="aplicacion.adelantar()">
+        <input type="button" value="Retrasar 5 segundos" onclick="aplicacion.retrasar()">
+    </section>
+
+    <section>
+        <input type="button" value="Video a pantalla completa" onclick="aplicacion.fullscreen()">
+    </section>
+
+    <video src="modulos.mp4" controls preload="auto" ></video>
+
+</body>
+</html>
