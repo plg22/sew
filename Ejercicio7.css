@@ -1,0 +1,41 @@
+/*******************************
+Pedro Limeres Granado - UO282763
+Descripcion de los estilos
+********************************/
+
+body {
+    margin-top: 5vh;
+    margin-right: 5vh;
+    margin-left: 5vh;
+
+    background-color: rgb(152, 255, 255);
+    color: black;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2vh;
+}/*001*/
+
+h2 {
+    font-size: 1.5em;
+}/*001*/
+
+h3 {
+    font-size: 1.2em;
+}/*001*/
+
+h5 {
+    font-size: 1em;
+}/*001*/
+
+table {
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 2vh;
+}
+
+
+
