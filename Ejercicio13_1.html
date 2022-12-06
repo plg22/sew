@@ -26,9 +26,10 @@
 <body>
     <h1>Generar un mapa con marcadores en las 26 posiciones(KML)</h1>
                     
-    <p>Seleccione un archivo de texto: </p>
-
-    <input type="file" id="archivoTexto" onchange="aplicacion.leerArchivoKml(this.files)">
+    <p>
+        <label for="archivoTexto">Seleccione un archivo de texto: </label>
+        <input type="file" id="archivoTexto" onchange="aplicacion.leerArchivoKml(this.files)">
+    </p>
 
     <main>
         <input type="button" value="Cargar el mapa(Asegurese de haber escogido un kml)" onclick="aplicacion.createMap()">
