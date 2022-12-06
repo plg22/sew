@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+	
+    <!--Metadatos de los documentos HTML5-->
+    <meta name ="author" content ="Pedro Limeres" />
+    <meta name ="description" content ="aquí cada documento debe tener la descripción del contenido concreto del mismo" />
+    <meta name ="keywords" content ="aquí cada documento debe tener la lista de las palabras clave del mismo separadas por comas" />
+
+    <!--Definición de la ventana gráfica-->
+    <meta name ="viewport" content ="width=device-width, initial scale=1.0" />
+
+    <title>Ejercicio 9</title>
+
+    <link rel="stylesheet" type="text/css" href="Ejercicio9.css" />
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="Ejercicio9.js"></script>
+</head>
+
+<body>
+    <h1>Ejercicio 9: OpenWeatherMap con XML</h1>   
+    <button name = "cargarJSONOviedo" onclick = "meteo.cargarDatos('Oviedo')">Obtener JSON Oviedo</button>
+    <button name = "cargarJSONPonferrada" onclick = "meteo.cargarDatos('Ponferrada')">Obtener JSON Ponferrada</button>
+    <button name = "cargarJSONGijon" onclick = "meteo.cargarDatos('Gijon')">Obtener JSON Gijon</button>
+    <button name = "cargarJSONAviles" onclick = "meteo.cargarDatos('Aviles')">Obtener JSON Aviles</button>
+    <button name = "cargarJSONVigo" onclick = "meteo.cargarDatos('Vigo')">Obtener JSON Vigo</button>
+    <footer>
+        <section>Clima en diferentes ciudades</section>
+    </footer>
+</body>
+</html>
