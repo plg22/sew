@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+	
+    <!--Metadatos de los documentos HTML5-->
+    <meta name ="author" content ="Pedro Limeres" />
+    <meta name ="description" content ="aquí cada documento debe tener la descripción del contenido concreto del mismo" />
+    <meta name ="keywords" content ="aquí cada documento debe tener la lista de las palabras clave del mismo separadas por comas" />
+
+    <!--Definición de la ventana gráfica-->
+    <meta name ="viewport" content ="width=device-width, initial scale=1.0" />
+
+    <title>Ejercicio 13(GeoJSON)</title>
+
+    <link rel="stylesheet" type="text/css" href="Ejercicio13_2.css" />
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6j4mF6blrc4kZ54S6vYZ2_FpMY9VzyRU">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="Ejercicio13_2.js"></script>
+</head>
+
+<body>
+    <h1>Generar un mapa con marcadores en las 26 posiciones(GeoJSON)</h1>
+                    
+    <p>Seleccione un archivo de texto: </p>
+
+    <input type="file" id="archivoTexto" onchange="aplicacion.leerArchivoGeoJSON(this.files)">
+
+    <main>
+        <input type="button" value="Cargar el mapa(Asegurese de haber escogido un kml)" onclick="aplicacion.createMap()">
+    </main>
+</body>
+</html>
