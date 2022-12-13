@@ -3,7 +3,7 @@ Pedro Limeres Granado - UO282763
 Descripcion de los estilos
 ********************************/
 
-main {
+form {
     display: grid;
   
     grid-template-columns: [zero] 6vh [one] 6vh [two] 6vh [three] 6vh [four] 6vh [five];
@@ -17,23 +17,14 @@ main {
     width: 35vh;
 
     background-color: rgb(186, 186, 186);
+    color:black;
     padding: 1em;
 } /*001*/
 
-input[type="text"] {
-    grid-column-start: zero;
-    grid-column-end: five;
-    grid-row-start: one;
-    grid-row-end: two;
-
-    text-align: right;
-
-    background-color: rgba(255, 255, 255, 0.750);
-}
-
-input[type="button"] {
+input[type="submit"] {
     font-size: 2vh;
     background-color: rgba(255, 255, 255, 0.500);
+    color:black;
     text-align: center;
 }
 
@@ -45,314 +36,347 @@ label{
 
     text-align: center;
     background-color: aliceblue;
+    color:black;
     border: 0.1em solid #000000;
 }
 
-input[value="DEG"] {
+input[name="DEG"] {
     background-color: rgba(255, 255, 255, 0.750);
+    color:black;
 }
-input[value="RAD"] {
+input[name="RAD"] {
     background-color: rgba(255, 255, 255, 0.750);
+    color:black;
 }
-input[value="HYP"] {
+input[name="HYP"] {
     background-color: rgba(255, 255, 255, 0.750);
+    color:black;
 }
-input[value="F-E"] {
+input[name="F-E"] {
     background-color: rgba(255, 255, 255, 0.750);
+    color:black;
 }
-input[value="MC"] {
+input[name="MC"] {
     grid-column-start: zero;
     grid-column-end: one;
     grid-row-start: three;
     grid-row-end: four;
 
     background-color: rgba(255, 255, 255, 0.750);
+    color:black;
 }
-input[value="MR"] {
+input[name="MR"] {
     grid-column-start: one;
     grid-column-end: two;
     grid-row-start: three;
     grid-row-end: four;
 
     background-color: rgba(255, 255, 255, 0.750);
+    color:black;
 }
-input[value="M+"] {
+input[name="M+"] {
     grid-column-start: two;
     grid-column-end: three;
     grid-row-start: three;
     grid-row-end: four;
 
     background-color: rgba(255, 255, 255, 0.750);
+    color:black;
 }
-input[value="M-"] {
+input[name="M-"] {
     grid-column-start: three;
     grid-column-end: four;
     grid-row-start: three;
     grid-row-end: four;
 
     background-color: rgba(255, 255, 255, 0.750);
+    color:black;
 }
-input[value="MS"] {
+input[name="MS"] {
     grid-column-start: four;
     grid-column-end: five;
     grid-row-start: three;
     grid-row-end: four;
 
     background-color: rgba(255, 255, 255, 0.750);
+    color:black;
 }
-input[value="x^2"] {
+input[name="x^2"] {
     grid-column-start: zero;
     grid-column-end: one;
     grid-row-start: four;
     grid-row-end: five;
 }
-input[value="x^y"] {
+input[name="x^y"] {
     grid-column-start: one;
     grid-column-end: two;
     grid-row-start: four;
     grid-row-end: five;
 }
-input[value="sin"] {
+input[name="sin"] {
     grid-column-start: two;
     grid-column-end: three;
     grid-row-start: four;
     grid-row-end: five;
 }
-input[value="cos"] {
+input[name="cos"] {
     grid-column-start: three;
     grid-column-end: four;
     grid-row-start: four;
     grid-row-end: five;
 }
-input[value="tan"] {
+input[name="tan"] {
     grid-column-start: four;
     grid-column-end: five;
     grid-row-start: four;
     grid-row-end: five;
 }
-input[value="asin"] {
+input[name="asin"] {
     grid-column-start: two;
     grid-column-end: three;
     grid-row-start: four;
     grid-row-end: five;
 }
-input[value="acos"] {
+input[name="acos"] {
     grid-column-start: three;
     grid-column-end: four;
     grid-row-start: four;
     grid-row-end: five;
 }
-input[value="atan"] {
+input[name="atan"] {
     grid-column-start: four;
     grid-column-end: five;
     grid-row-start: four;
     grid-row-end: five;
 }
-input[value="√"] {
+input[name="√"] {
     grid-column-start: zero;
     grid-column-end: one;
     grid-row-start: five;
     grid-row-end: six;
 }
-input[value="10^x"] {
+input[name="10^x"] {
     grid-column-start: one;
     grid-column-end: two;
     grid-row-start: five;
     grid-row-end: six;
 }
-input[value="log"] {
+input[name="log"] {
     grid-column-start: two;
     grid-column-end: three;
     grid-row-start: five;
     grid-row-end: six;
 }
-input[value="Exp"] {
+input[name="Exp"] {
     grid-column-start: three;
     grid-column-end: four;
     grid-row-start: five;
     grid-row-end: six;
 }
-input[value="Mod"] {
+input[name="Mod"] {
     grid-column-start: four;
     grid-column-end: five;
     grid-row-start: five;
     grid-row-end: six;
 }
-input[value="↥"] {
+input[name="↥"] {
     grid-column-start: zero;
     grid-column-end: one;
     grid-row-start: six;
     grid-row-end: seven;
 }
-input[value="↥↥"] {
+input[name="↥↥"] {
     grid-column-start: zero;
     grid-column-end: one;
     grid-row-start: six;
     grid-row-end: seven;
 }
-input[value="CE"] {
+input[name="CE"] {
     grid-column-start: one;
     grid-column-end: two;
     grid-row-start: six;
     grid-row-end: seven;
 }
-input[value="C"] {
+input[name="C"] {
     grid-column-start: two;
     grid-column-end: three;
     grid-row-start: six;
     grid-row-end: seven;
 }
-input[value="⌫"] {
+input[name="⌫"] {
     grid-column-start: three;
     grid-column-end: four;
     grid-row-start: six;
     grid-row-end: seven;
 }
-input[value="÷"] {
+input[name="/"] {
     grid-column-start: four;
     grid-column-end: five;
     grid-row-start: six;
     grid-row-end: seven;
 }
-input[value="π"] {
+input[name="π"] {
     grid-column-start: zero;
     grid-column-end: one;
     grid-row-start: seven;
     grid-row-end: eight;
 }
-input[value="7"] {
+input[name="7"] {
     grid-column-start: one;
     grid-column-end: two;
     grid-row-start: seven;
     grid-row-end: eight;
 
     background-color: rgb(255, 255, 255);
+    color:black;
 }
-input[value="8"] {
+input[name="8"] {
     grid-column-start: two;
     grid-column-end: three;
     grid-row-start: seven;
     grid-row-end: eight;
 
     background-color: rgb(255, 255, 255);
+    color:black;
 }
-input[value="9"] {
+input[name="9"] {
     grid-column-start: three;
     grid-column-end: four;
     grid-row-start: seven;
     grid-row-end: eight;
 
     background-color: rgb(255, 255, 255);
+    color:black;
 }
-input[value="x"] {
+input[name="x"] {
     grid-column-start: four;
     grid-column-end: five;
     grid-row-start: seven;
     grid-row-end: eight;
 }
-input[value="n!"] {
+input[name="n!"] {
     grid-column-start: zero;
     grid-column-end: one;
     grid-row-start: eight;
     grid-row-end: nine;
 }
-input[value="4"] {
+input[name="4"] {
     grid-column-start: one;
     grid-column-end: two;
     grid-row-start: eight;
     grid-row-end: nine;
 
     background-color: rgb(255, 255, 255);
+    color:black;
 }
-input[value="5"] {
+input[name="5"] {
     grid-column-start: two;
     grid-column-end: three;
     grid-row-start: eight;
     grid-row-end: nine;
 
     background-color: rgb(255, 255, 255);
+    color:black;
 }
-input[value="6"] {
+input[name="6"] {
     grid-column-start: three;
     grid-column-end: four;
     grid-row-start: eight;
     grid-row-end: nine;
 
     background-color: rgb(255, 255, 255);
+    color:black;
 }
-input[value="-"] {
+input[name="-"] {
     grid-column-start: four;
     grid-column-end: five;
     grid-row-start: eight;
     grid-row-end: nine;
 }
-input[value="±"] {
+input[name="±"] {
     grid-column-start: zero;
     grid-column-end: one;
     grid-row-start: nine;
     grid-row-end: ten;
 }
-input[value="1"] {
+input[name="1"] {
     grid-column-start: one;
     grid-column-end: two;
     grid-row-start: nine;
     grid-row-end: ten;
 
     background-color: rgb(255, 255, 255);
+    color:black;
 }
-input[value="2"] {
+input[name="2"] {
     grid-column-start: two;
     grid-column-end: three;
     grid-row-start: nine;
     grid-row-end: ten;
 
     background-color: rgb(255, 255, 255);
+    color:black;
 }
-input[value="3"] {
+input[name="3"] {
     grid-column-start: three;
     grid-column-end: four;
     grid-row-start: nine;
     grid-row-end: ten;
 
     background-color: rgb(255, 255, 255);
+    color:black;
 }
-input[value="+"] {
+input[name="+"] {
     grid-column-start: four;
     grid-column-end: five;
     grid-row-start: nine;
     grid-row-end: ten;
 }
-input[value="("] {
+input[name="("] {
     grid-column-start: zero;
     grid-column-end: one;
     grid-row-start: ten;
     grid-row-end: eleven;
 }
-input[value=")"] {
+input[name=")"] {
     grid-column-start: one;
     grid-column-end: two;
     grid-row-start: ten;
     grid-row-end: eleven;
 }
-input[value="0"] {
+input[name="0"] {
     grid-column-start: two;
     grid-column-end: three;
     grid-row-start: ten;
     grid-row-end: eleven;
 
     background-color: rgb(255, 255, 255);
+    color:black;
 }
-input[value="."] {
+input[name="."] {
     grid-column-start: three;
     grid-column-end: four;
     grid-row-start: ten;
     grid-row-end: eleven;
 
     background-color: rgb(255, 255, 255);
+    color:black;
 }
-input[value="="] {
+input[name="="] {
     grid-column-start: four;
     grid-column-end: five;
     grid-row-start: ten;
     grid-row-end: eleven;
+}
+
+input[name="pantalla"] {
+    grid-column-start: zero;
+    grid-column-end: five;
+    grid-row-start: one;
+    grid-row-end: two;
+
+    text-align: right;
+
+    background-color: rgba(255, 255, 255, 0.750);
+    color:black;
 }

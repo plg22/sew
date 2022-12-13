@@ -1,0 +1,66 @@
+/*******************************
+Pedro Limeres Granado - UO282763
+Descripcion de los estilos
+********************************/
+
+form {
+    display: grid;
+  
+    grid-template-columns: [zero] 8vh [one] 8vh [two] 8vh [three] 8vh [four] 8vh [five];
+    grid-template-rows: [zero] 4vh [one] 8vh [two] 8vh [three] 8vh [four] 8vh [five] 8vh [six] 8vh [seven];
+
+    gap: 1vh 1vh;
+
+    margin-top: 3vh;
+    margin-left: 3vw;
+
+    width: 45vh;
+
+    background-color: rgb(186, 186, 186);
+    color:black;
+    padding: 1em;
+} /*001*/
+
+input[name="pantalla"] {
+    grid-column-start: zero;
+    grid-column-end: five;
+    grid-row-start: one;
+    grid-row-end: two;
+
+    text-align: right;
+
+    background-color: rgba(255, 255, 255);
+    color:black;
+
+    border: 0.1em solid #000000;
+}
+
+input[value="+"] {
+    grid-column-start: three;
+    grid-column-end: four;
+    grid-row-start: five;
+    grid-row-end: seven;
+}
+
+input[type="submit"] {
+    font-size: 2vh;
+    background-color: rgba(0, 255, 255, 0.505);
+    color:black;
+}
+
+label{
+    grid-column-start: zero;
+    grid-column-end: five;
+    grid-row-start: zero;
+    grid-row-end: one;
+
+    text-align: center;
+    background-color: aliceblue;
+    color:black;
+    border: 0.1em solid #000000;
+}
+
+
+
+
+
