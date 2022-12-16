@@ -1,64 +1,61 @@
 <!DOCTYPE HTML>
 
-<html lang="es">
-<head>
+<html lang="es"><head>
     <!-- Datos que describen el documento -->
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
 	
     <!--Metadatos de los documentos HTML5-->
-    <meta name ="author" content ="Pedro Limeres" />
-    <meta name ="description" content ="CalculadoraRPN" />
-    <meta name ="keywords" content ="calculadora" />
+    <meta name="author" content="Pedro Limeres">
+    <meta name="description" content="CalculadoraRPN">
+    <meta name="keywords" content="calculadora">
 
     <!--Definición de la ventana gráfica-->
-    <meta name ="viewport" content ="width=device-width, initial scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
 
     <title>CalculadoraRPN</title>
 
-    <script src="CalculadoraRPN.js"></script>
-
-    <link rel="stylesheet" type="text/css" href="CalculadoraRPN.css" />
+    <link rel="stylesheet" type="text/css" href="CalculadoraRPN.css">
 </head>
 
 <body>
 
-    <main>
+    
+    <form action="#" method="post">
         <label for="pantalla"> Calculadora RPN </label>
-        <textarea id="pantalla" name="pantalla" ></textarea>
+        <textarea id="pantalla" name="pantalla" disabled="">""</textarea>
 
         <label for="auxiliar"> Actual: </label>
-        <input type="text" id="auxiliar" value="" disabled>
+        <input type="text" name="auxiliar" id="auxiliar" value="" disabled="">
 
-        <input type="button" value="↥" onclick="calculadoraRPN.cambio()">
-        <input type="button" value="sin" onclick="calculadoraRPN.sin()">
-        <input type="button" value="cos" onclick="calculadoraRPN.cos()">
-        <input type="button" value="tan" onclick="calculadoraRPN.tan()">
+        <input type="submit" value="↥" name="↥">
+        <input type="submit" value="sin" name="sin">
+        <input type="submit" value="cos" name="cos">
+        <input type="submit" value="tan" name="tan">
         
-        <input type="button" value="ON/C" onclick="calculadoraRPN.aCero()">
-        <input type="button" value="CE" onclick="calculadoraRPN.ce()">
-        <input type="button" value="±" onclick="calculadoraRPN.masMenos()">
-        <input type="button" value="/" onclick="calculadoraRPN.division()">
+        <input type="submit" value="ON/C" name="ON/C">
+        <input type="submit" value="CE" name="CE">
+        <input type="submit" value="±" name="±">
+        <input type="submit" value="/" name="/">
         
-        <input type="button" value="7" onclick="calculadoraRPN.digito('7')">
-        <input type="button" value="8" onclick="calculadoraRPN.digito('8')">
-        <input type="button" value="9" onclick="calculadoraRPN.digito('9')">
-        <input type="button" value="x" onclick="calculadoraRPN.multiplicacion()">
+        <input type="submit" value="7" name="7">
+        <input type="submit" value="8" name="8">
+        <input type="submit" value="9" name="9">
+        <input type="submit" value="x" name="x">
 
-        <input type="button" value="4" onclick="calculadoraRPN.digito('4')">
-        <input type="button" value="5" onclick="calculadoraRPN.digito('5')">
-        <input type="button" value="6" onclick="calculadoraRPN.digito('6')">
-        <input type="button" value="-" onclick="calculadoraRPN.resta()">
+        <input type="submit" value="4" name="4">
+        <input type="submit" value="5" name="5">
+        <input type="submit" value="6" name="6">
+        <input type="submit" value="-" name="-">
 
-        <input type="button" value="1" onclick="calculadoraRPN.digito('1')">
-        <input type="button" value="2" onclick="calculadoraRPN.digito('2')">
-        <input type="button" value="3" onclick="calculadoraRPN.digito('3')">
-        <input type="button" value="+" onclick="calculadoraRPN.suma()">
+        <input type="submit" value="1" name="1">
+        <input type="submit" value="2" name="2">
+        <input type="submit" value="3" name="3">
+        <input type="submit" value="+" name="+">
 
-        <input type="button" value="0" onclick="calculadoraRPN.digito('0')">
-        <input type="button" value="." onclick="calculadoraRPN.punto()">
-        <input type="button" value="Enter" onclick="calculadoraRPN.enter()">
+        <input type="submit" value="0" name="0">
+        <input type="submit" value="." name=".">
+        <input type="submit" value="Enter" name="Enter">
 
-        <script>calculadoraCientifica.aCero()</script>
-    </main>
-</body>
-</html>
+    </form>
+
+</body></html>
