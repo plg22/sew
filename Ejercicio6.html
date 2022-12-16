@@ -1,0 +1,178 @@
+<!DOCTYPE HTML>
+
+<html lang="es"><head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8">
+	
+    <!--Metadatos de los documentos HTML5-->
+    <meta name="author" content="Pedro Limeres">
+    <meta name="description" content="aquí cada documento debe tener la descripción del contenido concreto del mismo">
+    <meta name="keywords" content="aquí cada documento debe tener la lista de las palabras clave del mismo separadas por comas">
+
+    <!--Definición de la ventana gráfica-->
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+
+    <title>Ejercicio 6</title>
+
+    <link rel="stylesheet" type="text/css" href="Ejercicio6.css">
+</head>
+
+<body>
+
+    
+    <h1>Ejercicio 6: MySQL</h1>  
+    
+    <nav>
+        <a accesskey="C" tabindex="1" href="#crearBase">Crear BD</a>
+            
+        <a accesskey="T" tabindex="2" href="#crearTabla">Crear tabla</a>
+            
+        <a accesskey="I" tabindex="3" href="#insertar">Insertar prueba</a>
+            
+        <a accesskey="B" tabindex="4" href="#buscar">Buscar prueba</a>
+
+        <a accesskey="M" tabindex="5" href="#modificar">Modificar prueba</a>
+
+        <a accesskey="E" tabindex="6" href="#eliminar">Eliminar prueba</a>
+
+        <a accesskey="G" tabindex="7" href="#informe">Generar Informe</a>
+
+        <a accesskey="S" tabindex="8" href="#cargar">Cargar CSV</a>
+
+        <a accesskey="V" tabindex="9" href="#generar">Generar CSV</a>
+    </nav>
+
+    <form action="#" method="post" name="crearBase" id="crearBase">
+
+        <h2> Crear Base de Datos </h2>
+
+        <input type="submit" value="Crear base de datos(En caso de no crearse externamente)" name="crearBaseDatos">
+        
+    </form> 
+
+    <form action="#" method="post" name="crearTabla" id="crearTabla">
+
+        <h2> Crear tabla </h2>
+
+        <input type="submit" value="Crear tabla de pruebasUsabilidad(En caso de no crearse externamente)" name="crearTabla">
+        
+    </form>
+
+    <form action="#" method="post" name="insertar" id="insertar">
+
+        <h2> Insertar persona </h2>
+
+        <label for="idInsertar"> Id de la persona a insertar </label>
+        <input type="text" value="" id="idInsertar" name="idInsertar">
+
+        <label for="nameInsertar"> Nombre de la persona a insertar </label>
+        <input type="text" value="" id="nameInsertar" name="nameInsertar">
+
+        <label for="apellidosInsertar"> Apellidos de la persona a insertar </label>
+        <input type="text" value="" id="apellidosInsertar" name="apellidosInsertar">
+
+        <label for="emailInsertar"> Email de la persona a insertar </label>
+        <input type="text" value="" id="emailInsertar" name="emailInsertar">
+
+        <label for="telefonoInsertar"> Telefono sin prefijo de pais de la persona a insertar </label>
+        <input type="text" value="" id="telefonoInsertar" name="telefonoInsertar">
+
+        <label for="edadInsertar"> Edad de la persona a insertar </label>
+        <input type="text" value="" id="edadInsertar" name="edadInsertar">
+
+        <label for="sexoInsertar"> Sexo de la persona a insertar(male, female) </label>
+        <input type="text" value="" id="sexoInsertar" name="sexoInsertar">
+
+        <label for="periciaInsertar"> Pericia de la persona a insertar </label>
+        <input type="text" value="" id="periciaInsertar" name="periciaInsertar">
+
+        <label for="tiempoInsertar"> Tiempo de tarea de la persona a insertar </label>
+        <input type="text" value="" id="tiempoInsertar" name="tiempoInsertar">
+
+        <label for="correctaInsertar"> Tarea correcta (si, no) </label>
+        <input type="text" value="" id="correctaInsertar" name="correctaInsertar">
+
+        <label for="commentInsertar"> Pequeño comentario </label>
+        <input type="text" value="" id="commentInsertar" name="commentInsertar">
+
+        <label for="propuestaInsertar"> Pequeña propuesta para mejorar </label>
+        <input type="text" value="" id="propuestaInsertar" name="propuestaInsertar">
+
+        <label for="valoracionInsertar"> Valoración de la aplicación </label>
+        <input type="text" value="" id="valoracionInsertar" name="valoracionInsertar">
+
+
+        <input type="submit" value="Insertar una persona" name="insertar">
+        
+    </form>
+
+    <form action="#" method="post" name="buscar" id="buscar">
+        
+        <h2> Buscar persona </h2>
+
+        <label for="idBusc"> Id de la persona a buscar </label>
+        <input type="text" value="" id="idBusc" name="idBusc">
+
+        <input type="submit" value="Buscar en la bd por id" name="buscar">
+
+        <label for="personaEncontrada"> Persona encontrada </label>
+        <input type="text" value="" id="personaEncontrada" name="personaEncontrada" disabled="">
+        
+    </form>
+
+    <form action="#" method="post" name="modificar" id="modificar">
+        
+        <h2> Modificar persona </h2>
+
+        <label for="idMod"> Id de la persona a modificar </label>
+        <input type="text" value="" id="idMod" name="idMod">
+
+        <label for="emailMod"> Nuevo email </label>
+        <input type="text" value="" id="emailMod" name="emailMod">
+
+        <input type="submit" value="Cambiar el email" name="modificar">
+        
+    </form>
+
+    <form action="#" method="post" name="eliminar" id="eliminar">
+        
+        <h2> Eliminar persona </h2>
+
+        <label for="idElim"> Id de la persona a eliminar </label>
+        <input type="text" value="" id="idElim" name="idElim">
+
+        <input type="submit" value="Eliminar una persona" name="eliminar">
+        
+    </form>
+
+    <form action="#" method="post" name="informe" id="informe">
+        
+        <h2> Generar Informe </h2>
+
+        <input type="submit" value="Generar Informe" name="informe">
+
+        <label for="pantalla"> Informe </label>
+        <textarea id="pantalla" name="pantalla">""</textarea>
+        
+    </form>
+
+    <form enctype="multipart/form-data" action="#" method="post" name="cargar" id="cargar">
+        
+        <h2> Cargar CSV </h2>
+
+        <label for="fileCargar"> Introduce un archivo csv para cargar una persona </label>
+        <input type="file" id="fileCargar" name="fileCargar">
+
+        <input type="submit" value="Cargar de csv" name="cargar">
+        
+    </form>
+
+    <form action="#" method="post" name="generar" id="generar">
+        
+        <h2> Generar CSV </h2>
+
+        <input type="submit" value="Exportar a csv" name="exportar">
+        
+    </form>
+
+</body></html>
