@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+
+<html lang="es"><head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8">
+	
+    <!--Metadatos de los documentos HTML5-->
+    <meta name="author" content="Pedro Limeres">
+    <meta name="description" content="aquí cada documento debe tener la descripción del contenido concreto del mismo">
+    <meta name="keywords" content="aquí cada documento debe tener la lista de las palabras clave del mismo separadas por comas">
+
+    <!--Definición de la ventana gráfica-->
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+
+    <title>Ejercicio 7</title>
+
+    <link rel="stylesheet" type="text/css" href="Ejercicio7.css">
+</head>
+
+<body>
+
+    
+    <h1>Ejercicio 7: BD Formula 1</h1>  
+
+    <nav>
+        <a accesskey="I" tabindex="3" href="#insertar">Insertar prueba</a>
+            
+        <a accesskey="B" tabindex="4" href="#buscar">Buscar prueba</a>
+
+        <a accesskey="M" tabindex="5" href="#modificar">Modificar prueba</a>
+
+        <a accesskey="E" tabindex="6" href="#eliminar">Eliminar prueba</a>
+
+        <a accesskey="G" tabindex="7" href="#informe">Generar Informe</a>
+
+        <a accesskey="S" tabindex="8" href="#cargar">Cargar CSV</a>
+
+        <a accesskey="V" tabindex="9" href="#generar">Generar CSV</a>
+    </nav>
+
+    <form action="#" method="post" name="insertar" id="insertar">
+
+        <h2> Insertar en tabla </h2>
+
+        <label for="tablaInsertar"> Tabla donde insertar insertar (monoplaza, ingeniero, piloto, team, jefe)</label>
+        <input type="text" value="" id="tablaInsertar" name="tablaInsertar">
+
+        <label for="idInsertar"> Id a insertar </label>
+        <input type="text" value="" id="idInsertar" name="idInsertar">
+
+        <label for="nameInsertar"> Nombre a insertar </label>
+        <input type="text" value="" id="nameInsertar" name="nameInsertar">
+
+        <label for="extraInsertar"> Id de la relación, o Nombre de la mujer para "jefe" </label>
+        <input type="text" value="" id="extraInsertar" name="extraInsertar">
+
+
+        <input type="submit" value="Insertar una persona" name="insertar">
+        
+    </form>
+
+    <form action="#" method="post" name="buscar" id="buscar">
+        
+        <h2> Buscar en una tabla </h2>
+
+        <label for="tablaBusc"> Nombre de la tabla en la que buscar </label>
+        <input type="text" value="" id="tablaBusc" name="tablaBusc">
+
+        <input type="submit" value="Buscar en la bd por tabla" name="buscar">
+
+        <label for="found"> Valores encontrados </label>
+        <textarea id="found" name="found">""</textarea>        
+    </form>
+
+    <form action="#" method="post" name="modificar" id="modificar">
+        
+        <h2> Modificar nombre </h2>
+
+        <label for="tablaMod"> Tabla en la que modificar </label>
+        <input type="text" value="" id="tablaMod" name="tablaMod">
+
+        <label for="idMod"> Id de la persona a modificar </label>
+        <input type="text" value="" id="idMod" name="idMod">
+
+        <label for="nameMod"> Nuevo nombre </label>
+        <input type="text" value="" id="nameMod" name="nameMod">
+
+        <input type="submit" value="Cambiar el nombre" name="modificar">
+        
+    </form>
+
+    <form action="#" method="post" name="eliminar" id="eliminar">
+        
+        <h2> Eliminar fila </h2>
+
+        <label for="tablaElim"> Tabla de la que eliminar </label>
+        <input type="text" value="" id="tablaElim" name="tablaElim">
+
+        <label for="idElim"> Id de la instancia a eliminar </label>
+        <input type="text" value="" id="idElim" name="idElim">
+
+        <input type="submit" value="Eliminar una persona" name="eliminar">
+        
+    </form>
+
+    <form action="#" method="post" name="informe" id="informe">
+        
+        <h2> Generar Informe </h2>
+
+        <input type="submit" value="Generar Informe" name="informe">
+
+        <label for="pantalla"> Informe </label>
+        <textarea id="pantalla" name="pantalla">""</textarea>
+        
+    </form>
+
+    <form action="#" method="post" name="cargar" id="cargar">
+        
+        <h2> Cargar filas en CSV </h2>
+
+        <label for="fileCargar"> Introduce un archivo csv para cargar filas </label>
+        <input type="file" id="fileCargar" name="fileCargar">
+
+        <input type="submit" value="Cargar de csv" name="cargar">
+        
+    </form>
+
+    <form action="#" method="post" name="generar" id="generar">
+        
+        <h2> Generar CSV </h2>
+
+        <input type="submit" value="Exportar a csv" name="exportar">
+        
+    </form>
+
+</body></html>
